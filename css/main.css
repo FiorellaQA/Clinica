@@ -1,0 +1,49 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+.paciente{
+	border: 1px solid black;
+	margin: 10px;
+	padding: 10px;
+	display: inline-block;
+}
+html {
+	background: url("../img/fondo.jpg") no-repeat center center fixed;
+}
+img{
+	    margin: 50px 20px 0px 600px;
+
+}
+
+form{
+	text-align: center;
+}
+
+span{
+	color: red;
+	font-size: 12px;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+    border: 2px solid #16a085;
+  border-radius: 6px;
+  margin: 50px 50px 150px 700px;
+}
+
+.container .vertical-centered-text {
+
+}
+
+#records {
+	text-align: left;
+	padding: 20px;
+
+/*	display: flex;
+	align-items: flex-start;
+	left: 0;
+	position: absolute;*/
+} 

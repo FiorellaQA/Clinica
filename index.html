@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<title>Clinica Lab</title>
+	</head>
+	<body>
+		<div class="logo">
+			<span>
+				<a href="#"><img src="img/logo-color.png"></a>
+			</span>
+		</div>
+		<div class="container">
+			<div class="vertical-centered-text">
+				<h2 style="font-size: 9px;">Nuestros pacientes primero</h2>
+			</div>
+			<form id="form1">
+				<label for="name">Nombrelo:</label>
+				<input class="input-registro" type="text" id="name" placeholder="Ingrese su nombre ">
+				<span id="messageName"></span>	
+				<br><br>
+				<label for="lastname">Apellido:</label>
+				<input class="input-registro" type="text" id="lastname" placeholder="Ingrese su apellido">	
+				<span id="messageLastname"></span>
+				<br><br>
+				<label for="age">Edad:</label>
+				<input class="input-registro" type="text" id="age" placeholder="Ingrese su edad">	
+				<span id="messageAge"></span>
+				<br><br>
+				<label for="country">Pais:</label>
+				<input class="input-registro" type="text" id="country" placeholder="Ingresa tu país">
+				<span id="messageCountry"></span>	
+				<br><br>
+				<label for="city">Ciudad:</label>
+				<input class="input-registro" type="text" id="city" placeholder="Ingresa tu ciudad">
+				<span id="messageCity"></span>	
+				<br><br>
+				<label for="gender">Género:</label>
+				<input class="input-registro" type="text" id="gender" placeholder="Ingrese su género">	
+				<span id="messageGender"></span>
+				<br><br>
+				<span id="indicacion"></span>
+				<button id="bt">Enviar Datos</button>
+			</form>
+		</div>
+
+		<div id="records"></div>
+		<script type="text/javascript" src="js/script.js"></script>
+	</body>
+</html>
