@@ -6,12 +6,6 @@
 		this.pais = pais;
 		this.ciudad = ciudad;
 		this.genero = genero;
-		this.ficha = function (){
-					return  (	"Nombre: " + this.nombre + "</br>" +
-								"Apellido: " + this.apellido + "</br>" +
-								"Edad: " + this.edad + "</br>" +
-								"País: " + this.pais);
-    	};
 	}
 
 	var arrayPacientes = [];
@@ -69,6 +63,20 @@
 		var indicacion = document.getElementById("indicacion");
 			indicacion.innerHTML = "";
 	}
+	function creandoDiv(paciente){
+		var contenedor = document.getElementById("div-contenedor");
+		contenedor.innerHTML="";
+		for(var i = 0; i<paciente.length;i++){
+			var contenedorPaciente = document.createElement("div");
+			contenedorPaciente.classList.add("paciente");
+			for (var prop in paciente[i]) {
+				var dato = document.createElement("p");
+				dato.innerHTML= prop + " : " + paciente[i][prop];
+				contenedorPaciente.appendChild(dato);
+			}
+			contenedor.appendChild(contenedorPaciente);
+		}
+	}
 //EVENTOS
 	document.getElementById("bt").addEventListener("click",function(e){
 		e.preventDefault();
@@ -78,13 +86,12 @@
 		var country = document.getElementById("country").value;
 		var city = document.getElementById("city").value;
 		var gender = document.getElementById("gender").value;
-		var records = document.getElementById("records");
 		var indicacion = document.getElementById("indicacion");
 		if(name.length !=0 && lastname.length != 0 && age.length != 0 && country.length != 0 && city.length != 0 && gender.length !=0){
 			var nuevoPaciente = new Paciente(name, lastname, age, country, city, gender);
-			//arrayPacientes.push(nuevoPaciente); 
 			localStorage.setItem("data",JSON.stringify(nuevoPaciente));
-			//records.innerHTML += "<div class='paciente'>" + nuevoPaciente.ficha() + "</div>";
+			//arrayPacientes.push(nuevoPaciente); 
+			//creandoDiv(arrayPacientes);
 			document.getElementById("form1").reset();
 			indicacion.innerHTML = "";
 			window.location = "bienvenido.html";

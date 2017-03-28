@@ -6,7 +6,7 @@
 body, html {
   height: 100%;
 }
-html.noscroll { position: fixed; overflow-y: scroll; width: 100%; } 
+
 .flex-container {
   display: flex;
   flex-direction: row;
@@ -30,6 +30,10 @@ html.noscroll { position: fixed; overflow-y: scroll; width: 100%; }
 span{
 	color: red;
 	font-size: 12px;
+}
+#nombre-paciente,#apellido-paciente,#edad-paciente,#genero-paciente,#ciudad-paciente,#pais-paciente{
+	color: black;
+	margin: 0;
 }
 #records {
 	text-align: left;
