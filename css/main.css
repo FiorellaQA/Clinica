@@ -2,13 +2,44 @@
 	margin: 0px;
 	padding: 0px;
 }
+
+body, html {
+  height: 100%;
+}
+html.noscroll { position: fixed; overflow-y: scroll; width: 100%; } 
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  height:100%;
+  background: url("../img/fondo.jpg") no-repeat center center fixed;
+}
+
+.flex-item {
+  margin: auto;
+  background: #fff;
+  box-shadow: 0px 0px 7px grey;
+  padding: 40px;
+}
+
 .paciente{
 	border: 1px solid black;
 	margin: 10px;
 	padding: 10px;
 	display: inline-block;
 }
-html {
+span{
+	color: red;
+	font-size: 12px;
+}
+#records {
+	text-align: left;
+	padding: 20px;
+} 
+
+
+
+
+/*html {
 	background: url("../img/fondo.jpg") no-repeat center center fixed;
 }
 img{
@@ -16,14 +47,9 @@ img{
 
 }
 
-form{
-	text-align: center;
-}
 
-span{
-	color: red;
-	font-size: 12px;
-}
+
+
 .container {
   display: flex;
   justify-content: center;
@@ -33,17 +59,4 @@ span{
   border-radius: 6px;
   margin: 50px 50px 150px 700px;
 }
-
-.container .vertical-centered-text {
-
-}
-
-#records {
-	text-align: left;
-	padding: 20px;
-
-/*	display: flex;
-	align-items: flex-start;
-	left: 0;
-	position: absolute;*/
-} 
+*/
