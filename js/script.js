@@ -1,13 +1,4 @@
 //VARIABLES
-	function Paciente (nombre, apellido, edad, pais, ciudad, genero){
-		this.nombre = nombre;
-		this.apellido = apellido;
-		this.edad = edad;
-		this.pais = pais;
-		this.ciudad = ciudad;
-		this.genero = genero;
-	}
-
 	var arrayPacientes = [];
 	var name1 = document.getElementById("name");
 	var lastname = document.getElementById("lastname");
@@ -88,7 +79,7 @@
 		var gender = document.getElementById("gender").value;
 		var indicacion = document.getElementById("indicacion");
 		if(name.length !=0 && lastname.length != 0 && age.length != 0 && country.length != 0 && city.length != 0 && gender.length !=0){
-			var nuevoPaciente = new Paciente(name, lastname, age, country, city, gender);
+			var nuevoPaciente = new Paciente(name, lastname, age, gender, city, pais);
 			localStorage.setItem("data",JSON.stringify(nuevoPaciente));
 			//arrayPacientes.push(nuevoPaciente); 
 			//creandoDiv(arrayPacientes);
